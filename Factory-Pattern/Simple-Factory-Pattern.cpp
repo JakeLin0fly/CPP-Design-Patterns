@@ -23,7 +23,7 @@ public:
     }
 };
 /**
- * 具体产品：三角形
+ * 具体产品：长方形
  */
 class Rectangle : public Shape {
 public:

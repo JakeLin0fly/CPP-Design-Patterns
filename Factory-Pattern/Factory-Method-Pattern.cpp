@@ -22,7 +22,7 @@ public:
     }
 };
 /**
- * 具体产品：三角形
+ * 具体产品：长方形
  */
 class Rectangle : public Shape {
 public:
@@ -49,7 +49,7 @@ public:
     }
 };
 /**
- * 具体工厂：三角形工厂
+ * 具体工厂：长方形工厂
  */
 class RectangleFactory : Factory {
 public:
