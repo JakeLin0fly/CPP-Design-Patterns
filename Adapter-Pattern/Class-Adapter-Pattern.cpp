@@ -4,6 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 /**
+ * ## 类适配器示例 ##
  * 现有电脑仅有SD卡读写接口，而数据存储使用TF卡，
  * 此时就需要一个适配器（转接器），使得能通过电脑上仅有的SD卡接口实现对TF卡的读写。
  * 类图：https://gitee.com/jakel-in/images/raw/master/2021-11/Class-Adapter-Pattern.jpg
