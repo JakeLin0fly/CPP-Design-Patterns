@@ -29,7 +29,6 @@ public:
     Folder(string name) : IFile(name) {}
     virtual void touch(IFile *file) {
         childs.insert(file);
-        cout << fileName << "childs size = " << childs.size() <<endl;
     }
     virtual void remove(IFile *file) {
         childs.erase(file);
