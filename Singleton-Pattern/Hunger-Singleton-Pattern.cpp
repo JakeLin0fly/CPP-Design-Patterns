@@ -3,7 +3,7 @@
 //
 
 /**
- * 恶汉模式，线程安全
+ * 饿汉模式，线程安全
  */
 class Singleton {
 public:

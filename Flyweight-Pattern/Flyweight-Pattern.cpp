@@ -47,7 +47,7 @@ public:
     }
 };
 
-// 享元工厂：单例（恶汉）
+// 享元工厂：单例（饿汉）
 class BoxFactory {
 public:
     static BoxFactory* INSTANCE;
