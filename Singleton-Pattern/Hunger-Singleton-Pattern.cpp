@@ -3,7 +3,7 @@
 //
 
 /**
- * 恶汉模式
+ * 恶汉模式，线程安全
  */
 class Singleton {
 public:
@@ -12,27 +12,11 @@ public:
 private:
     Singleton();
 
-    static Lock; // 并发锁
-    static Singleton* instance;
+    static Singleton* INSTANCE;
 };
-Singleton::instance = nullptr;
 
-// 线程不安全版本
-Singleton* Singleton::getInstance() {
-    if (instance == nullptr) {
-        instance = new Singleton();
-    }
-    return instance;
-}
+Singleton* Singleton::INSTANCE = new Singleton();
 
-// 线程安全版本
 Singleton* Singleton::getInstance() {
-    if (instance == nullptr) {
-        // Lock 并发锁
-        if (instance == nullptr) {
-            instance = new Singleton();
-        }
-        // UnLock
-    }
-    return instance;
+    return Singleton::INSTANCE;
 }
